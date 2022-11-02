@@ -1,0 +1,101 @@
+.member-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem 4rem 5rem 4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  &:hover {
+    transform: scale(1.1);
+    z-index: 100;
+  }
+
+  &--1 {
+    background-image: url(../img/samundra.webp);
+    background-size: cover;
+    background-position: top;
+  }
+
+  &--2 {
+    background-image: url(../img/tilak.webp);
+    background-size: cover;
+    background-position: top;
+  }
+  &--3 {
+    background-image: url(../img/bibash.webp);
+    background-size: cover;
+    background-position: top;
+  }
+  &--4 {
+    background-image: url(../img/sandesh_home.webp);
+    background-size: cover;
+    background-position: top;
+  }
+  &--5 {
+    background-image: url(../img/anup.webp);
+    background-size: cover;
+    background-position: top;
+  }
+  &--6 {
+    background-image: url(../img/kussum.webp);
+    background-size: cover;
+    background-position: top;
+  }
+  &--7 {
+    background-image: url(../img/asutosh.webp);
+    background-size: cover;
+    background-position: top;
+  }
+  &--8 {
+    background-image: url(../img/birendra.webp);
+    background-size: cover;
+    background-position: top;
+  }
+
+  &__link {
+    text-align: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__heading {
+    color: $color-white;
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-white-2;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 28.9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-top: 1.5rem;
+    color: $color-white;
+    text-transform: capitalize;
+  }
+
+  &__social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    & li {
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+
+      a {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    i {
+      font-size: 1.8rem;
+      color: $color-white-2;
+    }
+  }
+}

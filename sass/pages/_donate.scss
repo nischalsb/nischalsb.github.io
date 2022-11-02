@@ -1,0 +1,55 @@
+.donation {
+  background-color: $color-bg;
+  padding: 15vh 10%;
+  h1 {
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 700;
+    position: relative;
+
+    &::before {
+      content: "";
+      bottom: 0;
+      left: 0;
+      border-bottom: 3px solid $primary-color;
+      position: absolute;
+      width: 70px;
+    }
+  }
+  & .pad {
+    padding: 50px;
+    background-color: $color-white;
+    border-radius: 20px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.25);
+    transition: 0.5s;
+    &:hover {
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.35);
+      transform: translateY(-1rem) scale(1.03);
+    }
+  }
+
+  & .esewa {
+    & img {
+      width: 16rem;
+    }
+
+    &__detail {
+      padding-top: 20px;
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-top: 10px;
+        font-weight: 600;
+        color: $color-write;
+        span {
+          margin-left: 20px;
+          color: $color-black;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

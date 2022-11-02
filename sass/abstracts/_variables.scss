@@ -1,0 +1,28 @@
+$primary-color: #64b1d5;
+$primary-color-light: #a8d8eb;
+$primary-color-back: #f7c33f;
+$primary-color-dark: #05044a;
+$secondary-color: #4c91bb;
+
+$color-white: #fff;
+$color-black: #000;
+$color-write: #898989;
+$color-bg: #f6f6f6;
+$color-white-2: rgba(255, 255, 255, 0.774);
+:root {
+  --color-grey-light: #f7f7f7;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-3: #999;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-1: #333;
+
+  --color-black-light: #929292;
+  --color-black-dark: #444444;
+}
+////How to use??? >>> var(--color-black-light)
+
+$default-font-size: 1.6rem;

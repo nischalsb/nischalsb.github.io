@@ -1,0 +1,36 @@
+.btn-read {
+  &:link,
+  &:visited {
+    margin-top: 1.5rem;
+    padding: 1.2rem 2.7rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.04rem;
+    background-color: $primary-color;
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+
+.btn-vol {
+  &:link,
+  &:visited {
+    border: none;
+    color: $color-white;
+    background-color: $secondary-color;
+    border-radius: 5px;
+    padding: 18px 28px;
+    line-height: 12px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    outline: none;
+    margin-top: 3rem;
+    margin-left: 3rem; // giving margin == space from the nav-item
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.479);
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+}

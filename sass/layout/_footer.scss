@@ -1,0 +1,120 @@
+.footer {
+  color: $color-white;
+  font-size: 1.3rem;
+  line-height: 25px;
+  &__content {
+    background-color: #222222;
+    padding: 10vh 12% 16vh 12%;
+    &--1 {
+      margin-top: 2rem;
+      img {
+        height: 6rem;
+      }
+      &-icons {
+        margin-top: 4rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        & i {
+          color: $color-white;
+          font-size: 1.6rem;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+        & li {
+          margin-right: 20px;
+        }
+      }
+    }
+    &--2 {
+      margin-top: 2rem;
+      h3 {
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+
+      ul {
+        li {
+          a {
+            text-decoration: none;
+            color: $color-white;
+
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+      i {
+        margin-right: 5px;
+        color: $primary-color;
+      }
+    }
+    &--3 {
+      margin-top: 2rem;
+      h3 {
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+      ul {
+        li {
+          i {
+            margin-right: 5px;
+          }
+          a {
+            text-decoration: none;
+            color: $color-white;
+            text-transform: capitalize;
+            border-bottom: 0.5px dotted $color-white;
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+          margin-top: 10px;
+        }
+      }
+    }
+    &--4 {
+      margin-top: 2rem;
+      h3 {
+        visibility: hidden;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+      ul {
+        li {
+          i {
+            margin-right: 5px;
+          }
+          a {
+            text-decoration: none;
+            color: $color-white;
+            text-transform: capitalize;
+            border-bottom: 0.5px dotted $color-white;
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.footer__bottom {
+  background-color: $color-black;
+  padding: 15px;
+  p {
+    color: $color-write;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+  }
+}

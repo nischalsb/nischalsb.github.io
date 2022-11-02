@@ -1,0 +1,56 @@
+.event {
+  padding: 10rem 10%;
+
+  &__container {
+    @media only screen and (max-width: 900px) {
+      margin-top: 3rem;
+    }
+  }
+  &__details {
+    background-color: $color-white;
+    padding: 3rem;
+    border: 2px solid var(--color-grey-light);
+    transition: 0.5s;
+    a {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 3.6rem;
+      text-decoration: none;
+      color: $color-black;
+    }
+    &:hover {
+      transform: translateY(-1rem) scale(1.03);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.35);
+    }
+
+    &-bar {
+      margin-top: 2rem;
+
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          color: $primary-color;
+          i {
+            margin-right: 5px;
+            font-size: 12px;
+            margin-bottom: 10px;
+          }
+          p {
+            color: $primary-color;
+          }
+          display: flex;
+
+          align-items: center;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1.4rem;
+      color: $color-write;
+    }
+  }
+}

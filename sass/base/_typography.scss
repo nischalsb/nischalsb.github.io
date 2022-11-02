@@ -1,0 +1,57 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: $default-font-size;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  &--main {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    color: $primary-color-back;
+  }
+
+  &--sup {
+    text-transform: capitalize;
+    margin-top: 1rem;
+    display: block;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+    span {
+      color: $secondary-color;
+    }
+  }
+}
+
+.heading-secondary {
+  &--main {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    color: $color-white-2;
+  }
+
+  &--sup {
+    @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+      text-align: center;
+    }
+    text-transform: capitalize;
+    display: block;
+    color: $color-white;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+  }
+}

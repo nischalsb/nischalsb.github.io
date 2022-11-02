@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--For font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css for bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- /bootstrap -->
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- /Aos -->
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home</title>
+  </head>
+  <style>
+    .spinner-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #a8d8eb;
+      z-index: 999999;
+    }
+
+    .spinner {
+      margin: 100px auto;
+      width: 50px;
+      height: 40px;
+      position: absolute;
+      top: 30%;
+      left: 48%;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    .spinner > div {
+      background-color: #fff;
+      height: 100%;
+      width: 6px;
+      display: inline-block;
+
+      -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+      animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    }
+
+    .spinner .rect2 {
+      -webkit-animation-delay: -1.1s;
+      animation-delay: -1.1s;
+    }
+
+    .spinner .rect3 {
+      -webkit-animation-delay: -1s;
+      animation-delay: -1s;
+    }
+
+    .spinner .rect4 {
+      -webkit-animation-delay: -0.9s;
+      animation-delay: -0.9s;
+    }
+
+    .spinner .rect5 {
+      -webkit-animation-delay: -0.8s;
+      animation-delay: -0.8s;
+    }
+
+    @-webkit-keyframes sk-stretchdelay {
+      0%,
+      40%,
+      100% {
+        -webkit-transform: scaleY(0.4);
+      }
+
+      20% {
+        -webkit-transform: scaleY(1);
+      }
+    }
+
+    @keyframes sk-stretchdelay {
+      0%,
+      40%,
+      100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+      }
+
+      20% {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+      }
+    }
+  </style>
+  <!--CSS Spinner-->
+  <div class="spinner-wrapper">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+
+  <body>
+    <!-- Section Top Start -->
+    <section class="top">
+      <div class="top__gmail">
+        <a href="#">
+          <i class="icon-home"></i>
+        </a>
+        <a href="mailto:info@edunep.org"> info@edunep.org </a>
+      </div>
+
+      <div class="top__welcome">Welcome to the EDUN Organization</div>
+
+      <div class="top__social">
+        <ul class="top__social-icons">
+          <li>
+            <a href="https://www.facebook.com/EduNfornepal" target="_blank">
+              <i class="icon-facebook2"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/educatenepalinitiative"
+              target="_blank"
+            >
+              <i class="icon-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/NepalEdun" target="_blank">
+              <i class="icon-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Section Top END-->
+
+    <!-- Navigation Start -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="brand">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="logo" class="nav-logo" />
+        </a>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              About Us
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="history.html">Our history</a>
+              <a class="dropdown-item" href="challenges.html">Our Challenges</a>
+              <a class="dropdown-item" href="approach.html">Our Approach</a>
+              <a class="dropdown-item" href="staff.html">Our Team</a>
+              <a class="dropdown-item" href="partner.html">Partners & Donors</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="event.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="membership.html">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+          <li>
+            <div class="donates">
+              <a href="donate.html">
+                <button class="donates__btn">Donate Now</button></a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Carousel Start -->
+    <div id="demo" class="carousel slide" data-ride="carousel" mt-4>
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="slide" src="img/2.webp" alt="" />
+          <div class="carousel-caption1">
+            <p class="red">Let's be kind for Children</p>
+            <p class="blue">With your kindness we can change Nepal.</p>
+
+            <div class="donate">
+              <a href="donate.html"
+                ><button class="donate__btn">Donate Now</button></a
+              >
+              <a href="membership.html">
+                <button class="donate__btn2">Know More &rarr;</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.webp" alt="" />
+          <div class="carousel-caption2">
+            <p class="red">Help Us Help Other</p>
+            <p class="blue">let's Make Change and help get eduation</p>
+            <div class="donate">
+              <a href="donate.html"
+                ><button class="donate__btn">Donate Now</button></a
+              >
+              <a href="membership.html">
+                <button class="donate__btn2">Know More &rarr;</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/1.webp" alt="" />
+          <div class="carousel-caption2">
+            <p class="red">Provide Education Provide Future</p>
+            <p class="blue">let's Make Change And Help Spread eduation</p>
+            <div class="donate">
+              <a href="donate.html"
+                ><button class="donate__btn">Donate Now</button></a
+              >
+              <a href="membership.html">
+                <button class="donate__btn2">Know More &rarr;</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span
+      ></a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Sticky social start-->
+    <div class="icon-bar">
+      <a
+        href="https://www.facebook.com/EduNfornepal"
+        target="_blank"
+        class="facebook"
+        ><i class="fa fa-facebook"></i
+      ></a>
+      <a href="https://twitter.com/NepalEdun" target="_blank" class="twitter"
+        ><i class="fa fa-twitter"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/educatenepalinitiative"
+        class="instagram"
+        ><i class="fa fa-instagram"></i
+      ></a>
+    </div>
+    <!-- Sticky social end -->
+
+    <!-- New Bar  start -->
+    <div class="container-fluid newbar">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 newbar__result">
+          <h1 data-aos="fade-up">
+            Thank to the <span> result</span> achieved with you!
+          </h1>
+          <div class="row newbar__result-content u-margin-top-small">
+            <div class="col-sm-6">
+              <h2 data-aos="fade-up">6000</h2>
+              <p data-aos="fade-up">helped people</p>
+            </div>
+            <div class="col-sm-6">
+              <h2 data-aos="fade-up">1200</h2>
+              <p data-aos="fade-up">Volunteers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 newbar__goals">
+          <h1 data-aos="fade-up">next goal</h1>
+          <ul data-aos="fade-up">
+            <li>
+              <p>new health camp</p>
+              <span>soon</span>
+            </li>
+            <li>
+              <p>new fellows</p>
+              <span>soon</span>
+            </li>
+            <li>
+              <p>new library</p>
+              <span>soon</span>
+            </li>
+            <li>
+              <p>new materials</p>
+              <span>soon</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 newbar__donate">
+          <h3 data-aos="fade-up">Help Us</h3>
+          <h1 data-aos="fade-up">Donate now</h1>
+          <a data-aos="fade-up" href="##" class="btn-check">Check it</a>
+        </div>
+      </div>
+    </div>
+    <!-- Newbar end -->
+
+    <!-- About start -->
+    <div class="container-fluid about">
+      <div class="row">
+        <div class="col-md-5 about__content" data-aos="fade-right">
+          <div class="vision">
+            <h1><span>EDUN</span> vision:</h1>
+            <p>"Provide Education Provide future"</p>
+          </div>
+          <div class="mission u-margin-top-small">
+            <h1>Our Mission:</h1>
+            <p>
+              Edun aims to form a chain of youths not only limited to Kathmandu
+              but throughout the country to ensure leadership, participation and
+              influence of the youths towards the betterment of the country.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7 about__write" data-aos="fade-left">
+          <p>
+            Educate Nepal Initiative (Edun) is an organization of young minds
+            enriched with dedication and determination to secure a change, a
+            positive change for the future of Nepal in the sector of Education.
+            Inaugurated in 2073/1/18, Edun is a result of dynamic youths from
+            across the country which in itself is an indicator on how scenarios
+            and circumstances of our societies are taken into account to design
+            the welfare programs that it aims to do. With young bright minds on
+            the table, the enthusiasm has set itself up as a platform for the
+            youths to develop leadership, a ground for learned scholars to
+            influence lives of their future generations and ultimately a
+            promising venture to help in making leaders that Nepal needs.
+            <span> <a href="history.html"> Read More... </a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- About end -->
+
+    <!-- Story/Choose Start-->
+    <div class="container-fluid story">
+      <div class="row">
+        <div class="col-lg-6 story__img">
+          <img src="img/challenges.webp" alt="" />
+        </div>
+        <div class="col-lg-6 story__content" data-aos="fade-up">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main"> what are the problems? </span>
+            <span class="heading-primary--sup">
+              Our <span> Challenges </span>
+            </span>
+          </h1>
+          <p>
+            In Nepal, the circumstances of children’s births predict the
+            opportunities they’ll have in life. Children growing up in
+            historically marginalized and disenfranchised communities lack
+            access to a broad spectrum of resources they need to thrive. The
+            obstacles they face-poverty, discrimination, trauma, and school
+            systems that do not provide them with the education they need—are
+            overwhelming.
+          </p>
+          <a href="challenges.html" class="btn-read">Read More &rarr;</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 story__content" data-aos="fade-up">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main"> how we proceed? </span>
+            <span class="heading-primary--sup">
+              Our <span> Approach</span>
+            </span>
+          </h1>
+          <p>
+            Educate Nepal Initiative aims to form a chain of youths not only
+            limited to Kathmandu but throughout the country to ensure
+            leadership, participation and influence of the youths towards the
+            betterment of the country. We, as an organization, have and will
+            impart education to the people from the local level in partnership
+            with government, civil society and other different agencies to bring
+            effective impacts in educational understanding,<br />
+            <a href="approach.html" class="btn-read">Read More &rarr;</a>
+          </p>
+        </div>
+
+        <div class="col-lg-6 story__img">
+          <img src="img/approach.webp" alt="image" />
+        </div>
+      </div>
+    </div>
+    <!-- Story/Choose end -->
+
+    <!-- Newbar2 start -->
+    <div class="container-fluid newbar2">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 feature-box" data-aos="fade-up">
+          <i class="feature-box__icon icon-location"></i>
+          <h3 class="feature-box__heading">+3000</h3>
+          <p>Total number of Schools</p>
+        </div>
+        <div class="col-lg-3 col-md-6 feature-box" data-aos="fade-up">
+          <i class="feature-box__icon icon-location2"></i>
+          <h3 class="feature-box__heading">+10000</h3>
+          <p>People Impact</p>
+        </div>
+        <div class="col-lg-3 col-md-6 feature-box" data-aos="fade-up">
+          <i class="feature-box__icon icon-compass2"></i>
+          <h3 class="feature-box__heading">+50</h3>
+          <p>Total staffs</p>
+        </div>
+        <div class="col-lg-3 col-md-6 feature-box" data-aos="fade-up">
+          <i class="feature-box__icon icon-map"></i>
+          <h3 class="feature-box__heading">+30</h3>
+          <p>Successful Projects</p>
+        </div>
+      </div>
+    </div>
+    <!-- Newbar2 end-->
+
+    <!-- Staff start -->
+    <div class="container-fluid staff">
+      <h1 class="heading-primary u-text-centre" data-aos="fade-up">
+        <span class="heading-primary--main"> Who are our members ? </span>
+        <span class="heading-primary--sup"> Our <span> Team </span> </span>
+      </h1>
+      <a href="staff.html" class="btn-read staff__link">Read More &rarr;</a>
+      <div class="row u-margin-top-big" data-aos="fade-up">
+        <div
+          class="owl-carousel owl-theme u-margin-top-small"
+          data-aos="fade-up"
+          id="owl-1"
+        >
+          <div class="item">
+            <div class="member-box member-box--1">
+              <a href="staff.html" class="member-box__link">
+                <h3 class="member-box__heading">Samundra Timalsina</h3>
+                <p>President</p>
+              </a>
+
+              <ul class="member-box__social-icons">
+                <li>
+                  <a
+                    href="https://www.facebook.com/samundratimalsina.55"
+                    target="_blank"
+                  >
+                    <i class="icon-facebook2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/samundra_timalsina"
+                    target="_blank"
+                  >
+                    <i class="icon-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="member-box member-box--2">
+              <a href="staff.html" class="member-box__link">
+                <h3 class="member-box__heading">Tilak Dhital</h3>
+                <p>Vice President</p>
+              </a>
+              <ul class="member-box__social-icons">
+                <li>
+                  <a
+                    href="https://www.facebook.com/tilak.dhital.79"
+                    target="_blank"
+                  >
+                    <i class="icon-facebook2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/tilakdhital005"
+                    target="_blank"
+                  >
+                    <i class="icon-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Tilak7005" target="_blank">
+                    <i class="icon-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="member-box member-box--3">
+              <a href="staff.html" class="member-box__link">
+                <h3 class="member-box__heading">Bibhash Parajuli</h3>
+                <p>Joint Secretary</p>
+              </a>
+              <ul class="member-box__social-icons">
+                <li>
+                  <a href="https://www.facebook.com/bibhas182" target="_blank">
+                    <i class="icon-facebook2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="icon-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"> <i class="icon-twitter"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="member-box member-box--4">
+              <a href="staff.html" class="member-box__link">
+                <h3 class="member-box__heading">Sandesh Paudel</h3>
+                <p>Treasurer</p>
+              </a>
+              <ul class="member-box__social-icons">
+                <li>
+                  <a
+                    href="https://www.facebook.com/sandesh.poudel90"
+                    target="_blank"
+                  >
+                    <i class="icon-facebook2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/sandesh.paudel90"
+                    target="_blank"
+                  >
+                    <i class="icon-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="member-box member-box--6">
+              <a href="staff.html" class="member-box__link">
+                <h3 class="member-box__heading">Kussum Ghimire</h3>
+                <p>Executive Member</p>
+              </a>
+              <ul class="member-box__social-icons">
+                <li>
+                  <a
+                    href="https://www.facebook.com/music.kussum"
+                    target="_blank"
+                  >
+                    <i class="icon-facebook2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="icon-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/kussssumerumal" target="_blank">
+                    <i class="icon-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="member-box member-box--7">
+              <a href="staff.html" class="member-box__link">
+                <h3 class="member-box__heading">Asutosh Karki</h3>
+                <p>Executive Member</p>
+              </a>
+              <ul class="member-box__social-icons">
+                <li>
+                  <a
+                    href="https://www.facebook.com/aashutosh.karki"
+                    target="_blank"
+                  >
+                    <i class="icon-facebook2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank"> <i class="icon-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"> <i class="icon-twitter"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="member-box member-box--8">
+              <a href="staff.html" class="member-box__link">
+                <h3 class="member-box__heading">Birendra Madai</h3>
+                <p>Executive Member</p>
+              </a>
+              <ul class="member-box__social-icons">
+                <li>
+                  <a
+                    href="https://www.facebook.com/birendra.madai.735"
+                    target="_blank"
+                  >
+                    <i class="icon-facebook2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank"> <i class="icon-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"> <i class="icon-twitter"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <div class="member-box member-box--9">
+              <a href="staff.html" class="member-box__link">
+                <h3 class="member-box__heading">Nischal Singh Bista</h3>
+                <p>Executive Member & Project Manager</p>
+              </a>
+              <ul class="member-box__social-icons">
+                <li>
+                  <a href="" target="_blank">
+                    <i class="icon-facebook2"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank"> <i class="icon-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"> <i class="icon-twitter"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Staff End -->
+
+    <!-- News Start -->
+    <div class="container-fluid news">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main" data-aos="fade-up">
+          What are the new Updates ?
+        </span>
+        <span class="heading-primary--sup">
+          News and <span> Events </span>
+        </span>
+      </h1>
+      <a href="event.html" class="btn-read btn">Read Blogs &rarr;</a>
+      <div class="row news__content u-margin-top-big" data-aos="fade-up">
+        <div class="col-lg-4 col-md-6 news__content-1">
+          <img src="img/1f.webp" alt="" width="100%" height="auto" />
+          <div class="news__content-1--item">
+            <a href="event1.html">
+              <h1>नेपालमै अवसर छ - Youth Summit 2016</h1>
+              <p>
+                "We belive youth can be empowerd by social mobilization and mass
+                awareness in Nepal"
+              </p>
+              <a href="event1.html" class="btn-read">Read more &rarr;</a>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 news__content-1">
+          <img src="img/1d.webp" alt="" width="100%" height="auto" />
+          <div class="news__content-1--item">
+            <a href="event2.html">
+              <h1>नेपालमै अवसर छ - Youth Summit 2017</h1>
+              <p>
+                "Society has progressed so are our beliefs, youth can only be
+                the agent for the change that we are expecting"
+              </p>
+              <a href="event2.html" class="btn-read">Read more &rarr;</a>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 news__content-1">
+          <img src="img/1c.webp" alt="" width="100%" height="auto" />
+
+          <div class="news__content-1--item">
+            <a href="event3.html">
+              <h1>नेपालमा भ्रष्टाचार नै छैन ? - Youth Summit 2018</h1>
+              <p>
+                "A satirical question to the youth of Nepal avoiding the deep
+                rooted customs of our society"
+              </p>
+              <a href="event3.html" class="btn-read">Read more &rarr;</a>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 news__content-1">
+          <img src="img/1a.webp" alt="" width="100%" height="auto" />
+          <div class="news__content-1--item">
+            <a href="event4.html">
+              <h1>E-Library Establishment 2073</h1>
+              <p>
+                "Education can only be redefined with revolution to the
+                resources"
+              </p>
+              <a href="event4.html" class="btn-read">Read more &rarr;</a>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 news__content-1">
+          <img src="img/1e.webp" alt="" width="100%" height="auto" />
+          <div class="news__content-1--item">
+            <a href="event5.html">
+              <h1>E-Library Establishment & Book Donation 2075</h1>
+              <p>
+                "Library will definetly empower students and help them follow
+                their dreams"
+              </p>
+              <a href="event5.html" class="btn-read">Read more &rarr;</a>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 news__content-1">
+          <img src="img/1b.webp" alt="" width="100%" height="auto" />
+
+          <div class="news__content-1--item">
+            <a href="event6.html">
+              <h1>Share your story : Gossip Stories I</h1>
+              <p>
+                "Sharing is always helpful and stories we share inspire the
+                youths"
+              </p>
+              <a href="event6.html" class="btn-read">Read more &rarr;</a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News End -->
+    <!-- Message Start -->
+    <div class="container-fluid message">
+      <h1 class="heading-primary" data-aos="fade-up">
+        <span class="heading-primary--main"> Message form our President </span>
+        <span class="heading-primary--sup"> the <span> Message </span> </span>
+      </h1>
+      <div class="row message__content">
+        <div class="col-lg-6 message__content--img" data-aos="fade-up"></div>
+        <div class="col-lg-6 message__content--letter" data-aos="fade-up">
+          <p>
+            <span>Message from the president</span><br />
+            It is an honor and a privilege to have been elected as the president
+            of such a determined, dedicated and united front of dynamic
+            individuals coming together to cultivate the unbroken commitment in
+            the sector of education in our country. The EduN endeavors to
+            promote national interests, with the mission “DO WE HAVE A MOTTO?”
+            to understand the needs of Nepal on education and work accordingly.
+            <br />
+            <br />
+            We, as an organization, have and will impart education to the people
+            from the local level in partnership with government, civil society
+            and other different agencies to bring effective impacts in
+            educational understanding, upbringing and standards in our country.
+            We mainly have our focus on capacity building, bringing local people
+            and government together to interact and produce best output through
+            awareness and educational initiations. Edun members have always
+            believed in change and that it is inevitable. With that, we embrace
+            our vital role and responsibilities in transformation of societal
+            changes. We believe in local level changes lead to a better harvest
+            where transformation through the collaboration and civic engagement
+            is the key to activating major changes and reforms. The prime
+            objective of the EduN is to assist in the development of educational
+            standards both at the private and public sector.
+            <br />
+            <br />
+            While there is still a long road to travel to ensure every child has
+            access to proper education we can celebrate that the journey has
+            begun and that we are all part of it.
+            <br />
+            <br />
+            Thank you
+            <br />
+            Yours,
+            <br />
+            Samundra Timalsina
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message end -->
+
+    <!-- Volunteer Start -->
+    <div class="container-fluid volunteer">
+      <h1 class="volunteer__heading" data-aos="fade-up">
+        Lets make nepal better <span>together</span>
+      </h1>
+      <a href="membership.html" class="btn-vol" data-aos="fade-up"
+        >Become a volunteer</a
+      >
+    </div>
+    <!-- Volunteer End -->
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+      <h1 class="heading-primary" data-aos="fade-up">
+        <span class="heading-primary--main"> What people say about Us? </span>
+        <span class="heading-primary--sup">
+          the <span> Testimonials </span>
+        </span>
+      </h1>
+      <div class="owl-carousel owl-theme" data-aos="fade-up">
+        <div class="slide">
+          <img src="img/suzit.png" alt="Suzit Adhikari" />
+          <blockquote>
+            <p>
+              <i class="fa fa-quote-left"></i> 'Nepal mai Awasar Chha'. It was
+              confusion and the worst part was I knew there was more to come.
+              And that’s when EduN came to us with such an insightful program
+              that led me to making one of the most crucial decisions in my
+              life.” Opportunity lies here in Nepal, you just have to have an
+              eye for it.” This changed my way of understanding what lied in
+              this land. I am pursueing my undergraduate degree here in my
+              country to understand more, to do whatever I do here in my
+              country, Nepal. Thank you Educate Nepal Initiative. Thank you to
+              the team.
+            </p>
+            <p><cite>&mdash; Suzit Adhikari</cite></p>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <img src="img/nayan.png" alt="Nayan Pokharel" />
+          <blockquote>
+            <p>
+              <i class="fa fa-quote-left"></i>
+              EduN not only stands to exist but to make a change. Changes that
+              we wanted to see in a place we aspire to stand. Not only did we
+              influence and supported youths and dynamic individuals, but in the
+              verge of making a change, we were so occupied that we did not
+              realize the changes we put on ourselves. Edun is not just an
+              organization but a platform to those who wish. It is all about the
+              perspective. I wish you best wishes, Educate Nepal Initiative.
+            </p>
+            <p><cite>&mdash; Nayan Pokharel</cite></p>
+          </blockquote>
+        </div>
+        <div class="slide">
+          <img src="img/bhushan.png" alt="Bhushan Rana Chettri" />
+          <blockquote>
+            <p>
+              <i class="fa fa-quote-left"></i>
+              Usually, it is considered luck to see something that you don’t
+              usually see. But I would want to define this experience as
+              something else. Getting to see the level of dedication,
+              enthusiasm, unity, respect and professionalism from these young
+              and dynamic individuals was something else. Yes, it was rare.
+              Maybe the reason it was so inspirational. I wish the team best of
+              the wishes in the coming future.
+            </p>
+            <p><cite>&mdash; Bhushan Rana Chettri</cite></p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials End -->
+
+    <!-- subscribe start -->
+    <div class="container-fluid subscribe">
+      <div class="row">
+        <div class="col-md-6 subscribe__img"></div>
+        <div class="col-md-6 subscribe__content">
+          <h1 data-aos="fade-up">Newsletter</h1>
+          <p data-aos="fade-up">
+            Sign up for our monthly newsletter to get the latest news, volunteer
+            opportunities,
+          </p>
+          <form
+            class="subscribe__content--form u-margin-top-small"
+            data-aos="fade-up"
+          >
+            <input
+              type="text"
+              placeholder="Your emaill address"
+              name="search"
+            />
+            <button type="submit">Subsribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- subscribe end -->
+
+    <!-- Footer Part -->
+    <footer class="footer container-fluid">
+      <div class="row footer__content">
+        <div class="col-lg-4 col-md-6 footer__content--1" data-aos="fade-up">
+          <img src="img/logo.png" alt="logo" />
+          <p class="u-margin-top-small">
+            || PROVIDE EDUCATION , PROVIDE FUTURE ||
+          </p>
+          <ul class="footer__content--1-icons">
+            <li>
+              <a href="https://www.facebook.com/EduNfornepal" target="_blank">
+                <i class="icon-facebook2"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/educatenepalinitiative/"
+                target="_blank"
+              >
+                <i class="icon-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/NepalEdun" target="_blank">
+                <i class="icon-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 footer__content--2" data-aos="fade-up">
+          <h3>Contact info</h3>
+
+          <ul class="u-margin-top-middle">
+            <li>Janasahayog Marg, New Baneshowr,</li>
+            <li>Kathmandu, Nepal</li>
+            <br />
+            <li>
+              <i class="icon-phone"></i> Phone:
+              <a href="tel:014104185"> (977) 1 4104185 </a>
+            </li>
+            <li>
+              <i class="icon-home"></i> Email:
+              <a href="mailto:info@edunep.org"> info@edunep.org </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 footer__content--3" data-aos="fade-up">
+          <h3>Quick links</h3>
+          <ul class="u-margin-top-middle">
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="history.html"> About Us</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right"></i> <a href="event.html"> Events</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="membership.html"> Membership</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="contact.html"> Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 footer__content--4" data-aos="fade-up">
+          <h3>Quick links</h3>
+          <ul class="u-margin-top-middle">
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="approach.html"> Our approach</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="challenges.html"> Our challenges</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="staff.html"> Our team</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="partner.html"> Partners</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer__bottom">
+        <div class="container">
+          <p>
+            copyright &#169; 2020 Educate Nepal Initiative, all right reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Part end -->
+    <script>
+      $(document).ready(function () {
+        //Preloader
+        preloaderFadeOutTime = 2000;
+        function hidePreloader() {
+          var preloader = $(".spinner-wrapper");
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      });
+    </script>
+    <script>
+      AOS.init({
+        duration: 600,
+        delay: 100,
+        once: true,
+      });
+    </script>
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 30) {
+          $(".navbar").addClass("affix");
+        } else {
+          $(".navbar").removeClass("affix");
+        }
+      });
+
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+          $(".icon-bar").addClass("sticky");
+        } else {
+          $(".icon-bar").removeClass("sticky");
+        }
+      });
+    </script>
+
+    <script>
+      $("#owl-1").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        autoHeight: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          700: {
+            items: 2,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        loop: true,
+        //nav: true,
+        //dots: true,
+        nav: false,
+        dots: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        autoplayHoverPause: true,
+        autoHeight: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+      owl.on("mousewheel", ".owl-stage", function (e) {
+        if (e.deltaY > 0) {
+          owl.trigger("next.owl");
+        } else {
+          owl.trigger("prev.owl");
+        }
+        e.preventDefault();
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

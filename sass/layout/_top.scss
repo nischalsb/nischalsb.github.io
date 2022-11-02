@@ -1,0 +1,39 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: $primary-color-light;
+  color: $color-white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 10px 0;
+
+  & i {
+    color: $color-white;
+    font-size: 1.6rem;
+  }
+
+  a {
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    @media only screen and (max-width: 1000px) {
+      display: none;
+    }
+    &-icons {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      & li {
+        margin-right: 20px;
+      }
+    }
+  }
+}

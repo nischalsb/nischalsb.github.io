@@ -1,0 +1,104 @@
+.navbar {
+  text-transform: uppercase;
+  padding: 0.5rem 7%;
+  background-color: $color-white;
+  border-bottom: 2px solid var(--color-grey-light);
+
+  & img {
+    // Maintaining Logo Size
+    @media only screen and (max-width: 995px) {
+      width: 6rem;
+    }
+    width: 8rem;
+  }
+
+  &-nav {
+    & .nav-item {
+      // Giving margin == space to the nav-item
+      margin-left: 3rem;
+    }
+
+    & li a {
+      @media only screen and (max-width: 950px) {
+        //when the hamburger appears showing the border-bottom to divide the nav-items
+        border-bottom: 2px solid var(--color-grey-light);
+      }
+
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 4rem;
+      color: $color-black;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        color: $primary-color;
+
+        &::before {
+          width: 100%;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  & .donates {
+    &__btn {
+      @media only screen and (max-width: 990px) {
+        //hiding when the hambuger//toggler appears
+        display: none;
+      }
+      border: none;
+      color: $color-white;
+      background-color: $secondary-color;
+      border-radius: 5px;
+      padding: 12px 20px;
+      line-height: 12px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      outline: none;
+      margin-top: 6px;
+      margin-left: 3rem; // giving margin == space from the nav-item
+      box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.479);
+    }
+  }
+
+  &-toggler {
+    & i {
+      font-size: 2.2rem;
+    }
+    & i:active {
+      color: $primary-color;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.affix {
+  // when scrolled affix is added changing the following properties for effect
+  transition: all 0.8s;
+  .navbar-nav li a {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .nav-logo {
+    width: 6rem;
+  }
+}
+.paffix {
+  // when scrolled affix is added changing the following properties for effect
+  transition: all 0.8s;
+  .navbar-nav li a {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .nav-logo {
+    width: 6rem;
+  }
+}
