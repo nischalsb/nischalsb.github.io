@@ -545,12 +545,12 @@ body {
   z-index: 100;
 }
 .member-box--1 {
-  background-image: url(../img/samundra.webp);
+  background-image: url(../img/president.jpg);
   background-size: cover;
   background-position: top;
 }
 .member-box--2 {
-  background-image: url(../img/tilak.webp);
+  background-image: url(../img/tilak_new.jpg);
   background-size: cover;
   background-position: top;
 }
