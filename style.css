@@ -1214,7 +1214,7 @@ body {
 .message__content--img {
   margin: 0;
   padding: 120px;
-  background-image: url(../img/president.webp);
+  background-image: url(../img/president.jpg);
   background-size: cover;
   background-position: top;
 }
