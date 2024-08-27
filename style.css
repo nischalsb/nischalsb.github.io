@@ -1217,6 +1217,8 @@ body {
   background-image: url(../img/president.jpg);
   background-size: cover;
   background-position: top;
+  height: 300px;
+  width: 150px;
 }
 .message__content--letter {
   padding: 40px;
