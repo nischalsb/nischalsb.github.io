@@ -1200,6 +1200,7 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
+
 .volunteer__heading span {
   color: #4c91bb;
 }
@@ -1208,9 +1209,11 @@ body {
   padding: 10vh 8% 10vh 6%;
   text-align: center;
 }
+
 .message__content {
   margin-top: 10vh;
 }
+
 .message__content--img {
   margin: 0;
   padding: 120px;
